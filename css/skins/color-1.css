@@ -1,0 +1,26 @@
+:root{
+    --skin-color: #ec1839;
+
+}
+
+.aside .nav {
+    margin-top: 50px;
+}
+
+.aside .nav li{
+    margin-top: 20px;
+    display: block;
+}
+.aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+    padding: 5px 15px;
+
+}
+.aside .nav li a.active{
+    color: var(--skin-color);
+}
+
