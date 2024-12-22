@@ -42,14 +42,14 @@ Voici un aperçu de mes compétences :
 
 ## 📧 Me Contacter  
 Vous pouvez me contacter via :  
-- **Email** : [brimitri.solar@example.com](mailto:brimitri.solar@example.com)  
-- **LinkedIn** : [Brimitri Solar](https://linkedin.com/in/brimitri-solar)  
+- **Email** : [mail](bridja.pro@gmail.com)  
+
 
 ---
 
 ## 🌐 Hébergement  
 Mon portfolio est hébergé sur **Netlify** :  
-[Portfolio Brimitri Solar](https://ab3d0.netlify.app/)  
+[Portfolio Abed Bridja](https://ab3d0.netlify.app/)  
 
 ---  
 
