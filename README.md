@@ -42,7 +42,7 @@ Voici un aperçu de mes compétences :
 
 ## 📧 Me Contacter  
 Vous pouvez me contacter via :  
-- **Email** : [mail](bridja.pro@gmail.com)  
+- **Email** : bridja.pro@gmail.com
 
 
 ---
