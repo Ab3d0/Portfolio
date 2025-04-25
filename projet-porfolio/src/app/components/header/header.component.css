@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: var(--bg-color);
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+}
+.presentation .nom{
+    color: var(--white-color);
+    align-items: center;
+    font-size: 3em;
+}
+
+#list {
+    list-style: none;
+    display: flex;
+}
+
+#list li{
+    margin-left: 25px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#list li a{
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition : border-color 0.3s;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+#list li i{
+    display: block;
+    padding: 5px 0;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}

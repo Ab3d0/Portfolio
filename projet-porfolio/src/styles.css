@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    outline: none;
+    font-family:  "Spartan", sans-serif
+}
+
+:root {
+   
+    --bg-color: rgb(34,34,34);
+    
+    --bg-second-bg-color: rgba(0, 0, 0, 0.3); /* fond secondaire plus soft semi-transparent */
+    
+  
+    --main-color:  rgb(34,34,34);
+
+  
+    --white-color: #ffffff;
+
+ 
+    --disabled-color: #ffffff33;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-attachment: fixed;
+    background-size: cover;
+
+}
