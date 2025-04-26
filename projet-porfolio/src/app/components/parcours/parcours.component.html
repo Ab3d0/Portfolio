@@ -1,8 +1,9 @@
 <section class="resume active">
     <div class="resume-container">
         <div class="resume-box">
-            <h2>Why Hire Me?</h2>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium culpa sed enim repellat quia cupiditate blanditiis quidem non est?</p>
+            <h2>Pourquoi me recruter?</h2>
+            <p class="desc">Étudiant passionné par l'informatique, je m'investis pleinement dans chaque projet que j'entreprends. Grâce à ma formation lar, j'ai acquis des bases solides que je continue de renforcer. 
+              Je suis motivé, curieux et prêt à apprendre pour contribuer au mieux aux missions qui me seront confiées.</p>
             <button class="resume-btn" [ngClass]="{'active': activeSection === 'experience'}" (click)="setActiveSection('experience')">Experience</button>
             <button class="resume-btn" [ngClass]="{'active': activeSection === 'education'}" (click)="setActiveSection('education')">Formation</button>
             <button class="resume-btn" [ngClass]="{'active': activeSection === 'skill'}" (click)="setActiveSection('skill')">Compétences</button>
@@ -14,13 +15,13 @@
         <div class="resume-box">
             <div class="resume-detail experience" *ngIf="activeSection === 'experience'">
                 <h2 class="heading">My <span>Experience</span></h2>
-                <p class="desc">Contenu de l'expérience...</p>
+                <p class="desc"> Vous trouverez ici un aperçu de mes expériences professionnelles réalisées dans différentes entreprises, au cours de mon parcours.</p>
                 <div class="resume-list">
                     <div class="resume-item">
                         <p class="year">Avril 2025 - Juin 2025</p>
-                        <h3>Stage </h3>
+                        <h3>Stage informatique </h3>
                         <p class="company">Yesil Conseil</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, asperiores reprehenderit? Nisi molestiae reprehenderit sequi porro enim aliquam, consequatur facere?</p>
+                        <p>Création d'un site web pour l'entreprise en Angular, avec TailwindCSS pour le design et intégration d'API pour la gestion des données.</p>
                     </div>
                     
 
@@ -31,32 +32,21 @@
 
             <div class="resume-detail education" *ngIf="activeSection === 'education'">
                 <h2 class="heading">My <span>Education</span></h2>
-                <p class="desc">Contenu de l'éducation...</p>
+                <p class="desc">Voici mon parcours scolaire et universitaire :</p>
                 <div class="resume-list">
                     <div class="resume-item">
-                        <p class="year">2024</p>
-                        <h3>Programming Course</h3>
-                        <p class="company"></p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe, consequatur ratione doloremque recusandae dolores velit facilis amet omnis accusantium.</p>
-
-
-                    </div>
-
-                    <div class="resume-item">
-                        <p class="year">2022-2021</p>
-                        <h3>Programming Course</h3>
-                        <p class="company"></p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe, consequatur ratione doloremque recusandae dolores velit facilis amet omnis accusantium.</p>
-                        
+                        <p class="year">2023 - 2025</p>
+                        <h3>DUT informatique</h3>
+                        <p class="company">IUT de Fontainebleau</p>
+                        <p>Formation en développement informatique, bases de données, réseaux, systèmes, avec projets pratiques en équipe et en autonomie.</p>
 
                     </div>
 
                     <div class="resume-item">
-                        <p class="year">2024</p>
-                        <h3>Programming Course</h3>
-                        <p class="company"></p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic saepe, consequatur ratione doloremque recusandae dolores velit facilis amet omnis accusantium.</p>
-                        
+                        <p class="year">2023</p>
+                        <h3>Baccalauréat Général</h3>
+                        <p class="company">Lycée Sonia Delaunay, Vert-Saint-Denis</p>
+                        <p>Spécialités Mathématiques et Physique-Chimie — Mention Assez Bien.</p>
 
                     </div>
                 </div>
@@ -153,37 +143,38 @@
             
             <div class="resume-detail about" *ngIf="activeSection === 'about'">
                 <h2 class="heading">About <span>Me</span></h2>
-                <p class="desc">Contenu à propos de toi...</p>
+                <p class="desc">Je suis étudiant en informatique, passionné par le développement web et les nouvelles technologies, toujours motivé pour apprendre et relever de nouveaux défis.</p>
                 <div class="resume-list">
                   <div class="resume-item">
                     <p><strong>Nom</strong> <span>Abed Bridja</span></p>
                   </div>
-
                   <div class="resume-item">
-                    <p><strong>Gender</strong> <span>Male</span></p>
-                  </div>
-
-                  <div class="resume-item">
-                    <p>Age <span>19 ans</span></p>
+                    <p><strong>Age</strong> <span>19 ans</span></p>
                   </div>
                   <div class ="resume-item">
-                    <p>Ville <span>Cesson</span></p>
+                    <p><strong>Ville</strong> <span>Cesson</span></p>
                   </div>
                   <div class="resume-item">
-                    <p>Nationnalité <span>Française</span></p>
+                    <p><strong>Nationalité</strong> <span>Française</span></p>
                   </div>
 
                   <div class="resume-item">
-                    <p>Phone <span>07.81.94.32.88</span></p>
+                    <p><strong>Téléphone</strong> <span>07.81.94.32.88</span></p>
                   </div>
 
                   <div class="resume-item">
-                    <p>Email <span>a.bridja7&#64;gmail.com</span></p>
+                    <p><strong>Email</strong> <span>bridja.pro&#64;gmail.com</span></p>
                   </div>
 
                   <div class="resume-item">
-                    <p>Langages <span>Français et Anglais</span></p>
+                    <p><strong>Langues</strong> <span>Français et Anglais</span></p>
                   </div>
+
+                  <br>
+
+                  <div class="resume-item">
+                    <p><strong>Centres d'intérêt</strong> <span>Programmation, nouvelles technologies, sport, voyages</span></p>
+                </div>
                 </div>
             </div>
         </div>

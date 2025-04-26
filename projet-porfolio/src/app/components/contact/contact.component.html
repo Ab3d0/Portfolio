@@ -1,0 +1,51 @@
+<section class="contact active">
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Travaillons Ensemble</h2>
+        <p class="desc">Passionné par l'informatique et toujours à la recherche de nouveaux défis, je suis disponible pour des projets variés. N'hésitez pas à me contacter si vous souhaitez discuter de collaboration ou d'opportunités professionnelles.</p>
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone"></i>
+              <div class="detail">
+                <p>Téléphone</p>
+                <p>07.81.94.32.88</p>
+              </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+            <div class="detail">
+              <p>Email</p>
+              <p>a.bridja77&#64;gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+            <div class="detail">
+              <p>Adresse</p>
+              <p>3 Rue de Grenadier,77240,Cesson</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="contact-box">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <h2 class="heading">Contactez <span>Moi</span></h2>
+          <div class="field-box">
+            <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Nom Complet" required>
+            <input type="email"  name="email" [(ngModel)]="formData.email" placeholder="Adresse Email" required>
+            <input type="text"  name="phone" [(ngModel)]="formData.phone" placeholder="Numéro de Téléphone" required>
+            <input type="text"  name="subject" [(ngModel)]="formData.subject" placeholder="Sujet de l'Email" required>
+            <textarea name="message" [(ngModel)]="formData.message" id="" placeholder="Votre Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+

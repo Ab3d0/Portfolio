@@ -6,9 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     gap: 3rem;
-    margin: 40px;
-    
-   
+
 
 }
 
@@ -16,6 +14,9 @@
     text-align: center;
     font-size: 4.5rem;
 
+}
+.portfolio-box{
+    margin: 50px;
 }
 
 .portfolio-box .numb{
