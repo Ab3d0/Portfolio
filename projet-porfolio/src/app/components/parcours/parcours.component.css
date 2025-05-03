@@ -1,5 +1,7 @@
 .resume{
     background-color:  rgb(23, 32, 42 );
+    width: 100%;
+    min-height: 100vh;
     
 }
 
@@ -33,7 +35,7 @@
 }
 
 .resume-box .desc {
-    margin: 2rem 0 2.5rem;
+    margin: 2rem 0 ;
 }
 
 .resume-box .resume-btn {
@@ -214,3 +216,118 @@
     margin-left: 1rem;
 }
 
+/* Responsive tablette (<= 992px) */
+@media (max-width: 992px) {
+    .resume-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  
+    .resume-box {
+      margin: 40px;
+    }
+  
+    .resume-box h2 {
+      font-size: 3.5rem;
+    }
+  
+    .resume-box p {
+      font-size: 1.4rem;
+    }
+  
+    .resume-box .resume-btn {
+      height: 4.5rem;
+      font-size: 1.4rem;
+    }
+  
+    .resume-item h3 {
+      font-size: 2.2rem;
+    }
+  
+    .resume-item .company {
+      font-size: 1.5rem;
+    }
+  
+    .resume-item p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Responsive mobile (<= 768px) */
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 2rem;
+      gap: 2rem;
+    }
+  
+    .resume-box {
+      margin: 20px;
+    }
+  
+    .resume-box h2 {
+      font-size: 2.8rem;
+    }
+  
+    .resume-box p {
+      font-size: 1.2rem;
+    }
+  
+    .resume-box .resume-btn {
+      font-size: 1.2rem;
+      height: 4rem;
+    }
+  
+    .resume-list {
+      grid-template-columns: 1fr;
+      height: auto;
+      overflow: visible;
+    }
+  
+    .resume-category .resume-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .resume-category .resume-item {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .resume-category .resume-item span {
+      font-size: 1.1rem;
+    }
+  
+    .resume-detail.about .resume-item p {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .resume-detail.about .resume-item p span {
+      text-align: left;
+      margin-left: 0;
+      font-size: 14px;
+    }
+  }
+  
+  /* Très petits écrans (<= 480px) */
+  @media (max-width: 480px) {
+    .resume-box h2 {
+      font-size: 2.2rem;
+    }
+  
+    .resume-box .resume-btn {
+      font-size: 1rem;
+    }
+  
+    .resume-category .resume-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .resume-item h3 {
+      font-size: 1.8rem;
+    }
+  
+    .resume-item .company {
+      font-size: 1.3rem;
+    }
+  }
+  

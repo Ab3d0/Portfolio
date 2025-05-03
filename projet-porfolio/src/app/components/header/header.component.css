@@ -5,6 +5,8 @@
     padding: 40px 60px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: var(--bg-color);
+    position: relative;      /* Nécessaire pour que z-index fonctionne */
+    z-index: 10;
 }
 
 .presentation{
