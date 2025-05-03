@@ -46,11 +46,13 @@
 .home-detail h1 {
     font-size: 6rem; 
     margin: 0;
+    font-weight: bold;
 }
 
 .home-detail h2 {
     font-size: 4rem;
     margin: 20px 0; 
+    font-weight: bold;
 }
 
 .home-detail p {
@@ -78,17 +80,23 @@
 
 .btn:hover {
     background-color: var(--main-color);
+    transform: translateY(5px);
 }
+
+
 
 .sci a {
     margin: 0 20px; 
     color: var(---white-color);
     font-size: 3rem; 
     transition: color 0.3s ease;
+  
 }
 
 .sci a:hover {
     color: var(---white-color);
+    transform: translateY(5px);
+    
 }
 
 

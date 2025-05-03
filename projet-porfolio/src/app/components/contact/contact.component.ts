@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { ContactService } from '../../services/contact.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { provideHttpClient } from '@angular/common/http'; 
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -21,16 +20,31 @@ export class ContactComponent {
     message: ''
   };
 
-
-  constructor(private contactService: ContactService) {}
-
   onSubmit(){
-    this.contactService.sendContactForm(this.formData).subscribe(response => {
-        console.log('Réponse de l\'API:', response);
-    }, error => {
-      console.error('Erreur lors de l\'envoi du formulaire:', error);
+    const serviceID = 'service_2xe9kjc';
+    const templateID = 'template_gmbhzmr';
+    const publicKey = 'p5n-bzkmScrLVuwEH';
+
+    const templateParams = {
+      name: this.formData.name,
+      email: this.formData.email,
+      phone: this.formData.phone,
+      subject: this.formData.subject,
+      message: this.formData.message,
+
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then(() => {
+        alert('Message envoyé avec succès !');
+      })
+      .catch((error => {
+        console.error('Erreur EmailJS :', error);
+        alert('Erreur lors de l\'envoi. Vérifie la console.');
+      }))
     
-    });
+
+
   }
 
 }

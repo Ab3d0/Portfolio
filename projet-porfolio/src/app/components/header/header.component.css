@@ -15,6 +15,7 @@
     color: var(--white-color);
     align-items: center;
     font-size: 3em;
+    font-weight: bold;
 }
 
 #list {
@@ -34,10 +35,11 @@
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
-    transition : border-color 0.3s;
+    transition: border-color 0.3s, transform 0.3s;
     border-bottom: 2px solid transparent;
-    padding: 10px 0;
+    padding: 2px 0;
     font-size: 2em;
+    display: inline-block;
 }
 
 #list li i{
@@ -45,4 +47,9 @@
     padding: 5px 0;
     color: var(--white-color);
     font-size: 1.5rem;
+}
+
+#list li a:hover {
+    transform: translateY(5px); 
+    border-bottom: 2px solid #ecf0f1 ; 
 }

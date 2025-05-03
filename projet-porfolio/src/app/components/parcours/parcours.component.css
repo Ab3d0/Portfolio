@@ -3,20 +3,16 @@
     
 }
 
-
-/* Continuité de la section à propos */
 .resume-detail.about .resume-item p span {
     color: var(--white-color);
     margin-left: 0;
-    font-size: 1.4rem;  /* Ajustement pour une taille de police uniforme */
+    font-size: 1.4rem; 
 }
 
-/* Section active du CV */
 .resume-detail.active {
     display: block;
 }
 
-/* Adaptation de la structure des sections */
 .resume-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -60,7 +56,6 @@
     font-weight: 600;
 }
 
-/* Gestion des éléments de la liste */
 .resume-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -73,7 +68,7 @@
     background-color: var(--bg-second-bg-color);
     border-radius: .8rem;
     padding: 3rem 2.5rem;
-    height: calc((45rem - 2rem) / 2);
+    height: calc((60rem - 2rem) / 2);
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -90,11 +85,12 @@
 
 .resume-item .year {
     color: var(--white-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .resume-item h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     
 }
 
@@ -102,7 +98,10 @@
     position: relative;
     margin-left: 2rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
+}
+.resume-item p{
+    font-size: 1.4rem;
 }
 
 .resume-item .company::before {
@@ -116,7 +115,7 @@
     margin-left: -2rem;
 }
 
-/* Structure des catégories de compétences */
+
 .resume-detail.skills .resume-list {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     height: auto;
@@ -173,29 +172,45 @@
 }
 
 .resume-detail.about .resume-list {
-    height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05); /* Léger fond translucide */
+    border-radius: 10px;
 }
 
 .resume-detail.about .resume-item {
-    height: auto;
-    padding: 0 0 .5rem;
     background: transparent;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.resume-detail.about .resume-item:last-child {
+    border-bottom: none;
 }
 
 .resume-detail.about .resume-item p {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     color: var(--white-color);
     font-size: 18px;
+    margin: 0;
+}
+
+.resume-detail.about .resume-item p strong {
+    font-weight: 600;
+    min-width: 140px;
+    color: var(--white-color);
 }
 
 .resume-detail.about .resume-item p span {
-    color: var(--white-color);
-    margin-left: 20px;
-    font-size: 15px;
-   
-
+    color: #cccccc;
+    font-size: 16px;
+    text-align: right;
+    flex-grow: 1;
+    margin-left: 1rem;
 }
+

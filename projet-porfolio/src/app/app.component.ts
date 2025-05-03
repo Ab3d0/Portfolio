@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from "./components/header/header.component";
-import { HeroComponent } from "./components/hero/hero.component";
-import { ParcoursComponent } from "./components/parcours/parcours.component";
-import { PortfolioComponent } from "./components/portfolio/portfolio.component";
-import { ContactComponent } from "./components/contact/contact.component";
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, HeroComponent, ParcoursComponent, PortfolioComponent, ContactComponent],
+  imports: [RouterModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
