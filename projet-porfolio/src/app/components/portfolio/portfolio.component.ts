@@ -72,7 +72,7 @@ export class PortfolioComponent  {
     },
     {
       number: '04',
-      title: 'Site_Streaming',
+      title: 'Site Streaming',
       description: `J'ai réalisé un site de streaming en utilisant une base de données et PHP, en suivant le modèle MVC (Modèle-Vue-Contrôleur). 
                         Ce projet permet aux utilisateurs de diffuser et de regarder des vidéos en ligne, avec des fonctionnalités telles que la recherche, 
                         la gestion des utilisateurs et la recommandation de contenu. Ce développement m'a permis de renforcer mes compétences en gestion de 
@@ -84,6 +84,55 @@ export class PortfolioComponent  {
       image: './img/Site_streaming.png'
 
     },
+    {
+      number: '05',
+      title: 'Jeu de Tuiles – Dorfromantik',
+      description: `J'ai conçu un jeu en Java inspiré de Dorfromantik, où le joueur assemble des tuiles hexagonales représentant différents terrains (mer, forêt, montagne, etc.) pour construire un paysage harmonieux. 
+                    Le joueur choisit la position et l’orientation des tuiles à chaque tour, en respectant des contraintes d’adjacence. Le score final dépend de la taille des ensembles de terrains connectés.
+                    Une base de données en PHPMyAdmin permet de stocker les parties et les scores selon des séries prédéfinies.
+                    Ce projet m’a permis de développer mes compétences en Java, en conception algorithmique, ainsi qu’en interaction avec une base de données.`,
+      tech: 'Java, PHPMyAdmin, MVC',
+      liveLink: '#',
+      githubLink: '',
+      image: './img/Dorfromantik.png'
+    },
+    {
+      number: '06',
+      title: 'Site de Bibliothèque',
+      description: `Ce projet est un site web de gestion de bibliothèque permettant d’ajouter, modifier et supprimer des livres. L’interface utilisateur a été développée en HTML, CSS et JavaScript, 
+                    tandis que le backend repose sur PHP avec une base de données pour stocker les livres. Le déploiement a été réalisé via Docker en utilisant des Dockerfiles et un fichier docker-compose 
+                    pour orchestrer les différents services (frontend, backend, base de données). Ce projet m’a permis de comprendre les bases du déploiement avec Docker et d’intégrer toute une application web dans des conteneurs.`,
+      tech: 'HTML, CSS, JS, PHP, Docker, Docker Compose',
+      liveLink: '#',
+      githubLink: '',
+      image: './img/site_bibliotheque.png'
+    },
+    {
+      number: '07',
+      title: 'Relier les Points – Puzzle Android',
+      description: `J'ai développé une application Android en Java inspirée du jeu "Flow Free". Le but est de relier des paires de points de même couleur dans une grille carrée sans croiser les chemins, 
+                    tout en remplissant toutes les cases. L’application propose un menu interactif, un mode de configuration pour les personnes daltoniennes, et utilise des fichiers XML pour le stockage des puzzles. 
+                    Ce projet m’a permis d’apprendre le développement mobile Android, la gestion d’activités, les fichiers assets, et le parsing XML.`,
+      tech: 'Java (Android), XML',
+      liveLink: '#',
+      githubLink: '',
+      image: './img/relier_points.jpg'
+    },
+    {
+      number: '08',
+      title: 'Site vitrine - Yesil Conseil',
+      description: `J'ai conçu et développé le site vitrine de l’entreprise Yesil Conseil en utilisant Angular pour le framework frontend et TailwindCSS pour le design. 
+                    Le site met en valeur les services proposés par l'entreprise, son expertise, et permet aux clients potentiels de la contacter facilement via un formulaire intégré. 
+                    Le projet met l’accent sur une navigation fluide, un design moderne et responsive, et une architecture bien structurée en composants Angular. 
+                    Cette réalisation m’a permis de consolider mes compétences en développement web moderne et en intégration responsive.`,
+      tech: 'Angular, TailwindCSS',
+      liveLink: '#',
+      githubLink: 'https://github.com/Ab3d0/Site-YesilConseil',
+      image: './img/site_yesilconseil.png'
+    },
+    
+    
+    
   ]
 
 

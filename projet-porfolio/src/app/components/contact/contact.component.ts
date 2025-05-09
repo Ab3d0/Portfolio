@@ -21,9 +21,9 @@ export class ContactComponent {
   };
 
   onSubmit(){
-    const serviceID = 'service_2xe9kjc';
-    const templateID = 'template_gmbhzmr';
-    const publicKey = 'p5n-bzkmScrLVuwEH';
+    const serviceID = '';
+    const templateID = '';
+    const publicKey = '';
 
     const templateParams = {
       name: this.formData.name,
