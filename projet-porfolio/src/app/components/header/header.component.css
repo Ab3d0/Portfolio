@@ -20,6 +20,16 @@
     font-weight: bold;
 }
 
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 3em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+
 #list {
     list-style: none;
     display: flex;
@@ -54,4 +64,38 @@
 #list li a:hover {
     transform: translateY(5px); 
     border-bottom: 2px solid #ecf0f1 ; 
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    #list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+
+    #list.open {
+        display: flex;
+    }
+
+    #list li {
+    margin: 0;
+    padding: 15px 0;
+    border-top: 1px solid white;
+    border-top-left-radius: 10px;
+    
+  }
+
+  #list li:first-child {
+    border-top: none;
+  }
 }

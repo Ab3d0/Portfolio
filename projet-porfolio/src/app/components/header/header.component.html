@@ -3,25 +3,30 @@
         <h2 class="nom">Abed Bridja</h2>
     </div>
     <div>
-        <ul id="list">
-            <li>
-                <i class="fa-solid fa-house"></i>
-                <a class="active" routerLink="/home">Accueil</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-school"></i>
-                <a  routerLink="/education">Parcours</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-address-book"></i>
-                <a  routerLink="/experience">Portfolio</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle-user"></i>
-                <a routerLink="/contact">Contact</a>
-            </li>
+        <button class="burger" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-        </ul>
+
+        <ul id="list" [ngClass]="{ 'open': menuOpen }">
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a routerLink="/home" (click)="menuOpen = false">Accueil</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-school"></i>
+              <a routerLink="/education" (click)="menuOpen = false">Parcours</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              <a routerLink="/experience" (click)="menuOpen = false">Portfolio</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-user"></i>
+              <a routerLink="/contact" (click)="menuOpen = false">Contact</a>
+            </li>
+          </ul>
+          
     </div>
    
 </header>
