@@ -41,7 +41,7 @@ Tu peux me contacter ici :
 ## 🌐 Hébergement
 Mon portfolio est en ligne grâce à **Netlify** :
 
-🔗 [Voir le portfolio en ligne](https://ab3d0.netlify.app/)
+🔗 [Voir le portfolio en ligne](https://abed0-portfolio.netlify.app/)
 
 ---
 
